@@ -12,6 +12,8 @@ add_executable(tree-experiments
     main.cpp
     tree-sitter/src/runtime/runtime.c
     tree-sitter-json/src/parser.c 
+    tree-sitter-cpp/src/parser.c 
+    tree-sitter-cpp/src/scanner.cc 
     )
 
 target_include_directories(

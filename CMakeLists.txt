@@ -10,7 +10,9 @@ aux_source_directory(source SOURCES)
 add_executable(tree-experiments
     ${SOURCES}
     main.cpp
-    tree-sitter/src/runtime/runtime.c)
+    tree-sitter/src/runtime/runtime.c
+    tree-sitter-json/src/parser.c 
+    )
 
 target_include_directories(
     tree-experiments
@@ -20,5 +22,7 @@ PRIVATE
     tree-sitter/externals/utf8proc
     ${CMAKE_CURRENT_SOURCE_DIR}/include/
 	)
+
+target_link_libraries(tree-experiments)
 
 

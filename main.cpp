@@ -49,10 +49,6 @@ int main(  int argc, const char** argv )
   // Get the root node of the syntax tree.
   TSNode root_node = ts_tree_root_node(tree);
 
-  // Get some child nodes.
-  TSNode array_node = ts_node_named_child(root_node, 0);
-  TSNode number_node = ts_node_named_child(array_node, 0);
-
   // Print the syntax tree as an S-expression.
   char *s_expressions = ts_node_string(root_node);
   std::cout << "Syntax tree: " << std::endl;

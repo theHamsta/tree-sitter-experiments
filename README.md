@@ -1,3 +1,6 @@
 # tree-sitter-experiments
 
-  git submodule update --init --recursive
+Has a lot of submodules:
+```bash
+   git submodule update --init --recursive
+```
